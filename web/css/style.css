@@ -1,0 +1,126 @@
+@font-face{
+    font-family: "RobotoCondensedLight";
+    src: url("../fonts/robotocondensed-light.ttf"), 
+    url("../fonts/robotocondensed-light.eot"), 
+    url("../fonts/robotocondensed-light.woff"), 
+    url("../fonts/robotocondensed-light.woff2"), 
+    url("../fonts/robotocondensed-light.svg");
+}
+@font-face{
+    font-family: "RobotoRegular";
+    src: url("../fonts/roboto-regular.ttf"), 
+    url("../fonts/roboto-regular.eot"), 
+    url("../fonts/roboto-regular.woff"), 
+    url("../fonts/roboto-regular.woff2"), 
+    url("../fonts/roboto-regular.svg");
+}
+@font-face{
+    font-family: "OswaldLight";
+    src: url("../fonts/oswald-light.ttf"), 
+    url("../fonts/oswald-light.eot"), 
+    url("../fonts/oswald-light.woff"), 
+    url("../fonts/oswald-light.woff2"), 
+    url("../fonts/oswald-light.svg");
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+/*Pie de pagina================*/
+.footer{
+    background-color: #d9534f;
+    height: auto;
+    color: white;
+    margin-top: 58px;
+text-align: center;
+}
+.footer-copyright{
+
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    background-color: #d9534f;
+    padding-bottom: -1px;
+    padding-top:1px;
+
+}
+.footer-social{
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+.footer-social:hover{ 
+    color: #fff;
+    transform: scale(1.7);
+}
+h6.s{
+letter-spacing: .04em;
+     color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Parrafos";
+    font-weight: bold; 
+
+    margin-top: 1px;
+        margin-bottom: 1px;
+
+    
+}
+/*Contenedores de formularios ================*/
+.container-flat-form{
+    width: 98%;
+    margin: 25px auto;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    border-radius: 5px;
+ 
+    padding-bottom: 25px;
+}
+
+/*Controles de formularios material desing ================*/
+.group-material{ 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input.material-control,
+select.material-control{
+  font-size:16px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #5264AE;
+}
+select.material-control,
+select.no-style{
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #fff url(../assets/icons/SelectMaterialIndicator.png) no-repeat scroll right 0.75rem center / 9px 13px;
+}
+select.material-control:hover,
+select.no-style{
+    cursor: pointer;
+}
+
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    .form-container{ width: 370px; }
+    .navbar-lateral{ width: 30%; display: inherit !important; }
+    .content-page-container{ width: 70%; }
+}
+
+
+
+/* col-lg */
+@media (min-width: 1200px) {
+    .form-container{ width: 370px; }
+    .navbar-lateral{ display: inherit !important; }
+}
